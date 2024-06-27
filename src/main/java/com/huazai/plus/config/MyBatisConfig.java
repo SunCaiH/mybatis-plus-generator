@@ -81,7 +81,7 @@ public class MyBatisConfig
 		// 数据源配置 修改数据源配置
 		final DataSourceConfig dbConfig = new DataSourceConfig();
 		// 数据库类型
-		dbConfig.setDbType(DbType.POSTGRE_SQL);
+		dbConfig.setDbType(DbType.MYSQL);
 		//自定义数据库表字段类型转换（可选）
 		/**
 		dbConfig.setTypeConvert(new MySqlTypeConvert() {
@@ -97,11 +97,11 @@ public class MyBatisConfig
 		**/
 		// 数据库驱动
 		// 注意：MySQL5驱动为：com.mysql.jdbc.Driver；MySQL6驱动为：com.mysql.cj.jdbc.Driver
-		dbConfig.setDriverName(Constant.POSTGREPSQL_DRIVER_NAME_SEX_BEFORE);
+		dbConfig.setDriverName(Constant.MYSQL_DRIVER_NAME_FIVE_LATER);
 		// 数据库地址
-		dbConfig.setUrl(Constant.POSTGREPSQL_URI);
-		dbConfig.setUsername(Constant.POSTGREPSQL_USERNAME);
-		dbConfig.setPassword(Constant.POSTGREPSQL_PASSWORD);
+		dbConfig.setUrl(Constant.MYSQL_URI);
+		dbConfig.setUsername(Constant.MYSQL_USERNAME);
+		dbConfig.setPassword(Constant.MYSQL_PASSWORD);
 		generator.setDataSource(dbConfig);
 
 		// 包配置
